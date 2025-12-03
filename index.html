@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebSite with Bootstrap</title>
+    <title>Creatore di mail</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Creatore di mail</h1>
+      <label>Inserisci qui il tuo username: </label>
+      <input type="text" name="" id="username" class="inp" value="" />
+      <input type="password" id="password" class="inp" value="" />
+      <input type="button" onclick="showPwd()" value="👁️‍🗨️" class="password" />
+      <br />
+      <h3>Inserisci Estensione</h3>
+      <div class="radio">
+        <input type="radio" name="ext" id="gmail" />
+        <label for="gmail">@gmail.com</label>
+        <br />
+        <input type="radio" name="ext" id="hotmail" />
+        <label for="hotmail">@hotmail.it</label>
+        <br />
+        <input type="radio" name="ext" id="studenti" />
+        <label for="studenti">@studenti.itisarezzo.it</label>
+        <br />
+        <input type="radio" name="ext" id="professori" />
+        <label for="professori">@itisarezzo.it</label>
+      </div>
+
+      <button onclick="createEmail()">Create!</button>
+
+      <p id="result"></p>
+      <p id="psw"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
